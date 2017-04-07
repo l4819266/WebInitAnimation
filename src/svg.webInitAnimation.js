@@ -9,7 +9,7 @@ jQuery && SVG && (function($) {
         var screenHeight = window.screen.height;
         var screenWidth = window.screen.width;
         //创建绘制面板
-        var svgContent = $('<div id="web_init_svg" width="' + screenWidth + '" height="' + screenHeight + '" style="position:absolute;top:0;left:0;z-index:9999999999999999;background-color: white;"></div>');
+        var svgContent = $('<div id="web_init_svg" width="' + screenWidth + '" height="' + screenHeight + '" style="position:fixed;top:0;bottom:0;right:0;left:0;z-index:9999999999999999;background-color: white;"></div>');
         $("body").prepend(svgContent);
         var draw = SVG("web_init_svg").size(screenWidth, screenHeight);
 
